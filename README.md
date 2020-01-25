@@ -28,5 +28,8 @@ After supplying these files, run main.py to start the chatbot. Here is a sample 
     
     See you later!
     NB: Sure! Don't get eaten by dream zombies
+    
+    bye
+    NB: Hasta luego!
 
 I plan to use this as a way to introduce myself during a lecture, by incorporating my Facebook chat history into the chat bot and including biographical content in chatbot.txt file.
