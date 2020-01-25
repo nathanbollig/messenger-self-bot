@@ -29,6 +29,8 @@ one json file called "message_1.json", and that the messages are in reverse
 chronological order. The following assumes this always holds.
 """
 
+SELF = "Nathan Bollig"
+
 for entry in os.scandir("inbox"):
     path = os.path.join(entry.path, "message_1.json")
     with open(path) as json_file:
@@ -45,7 +47,7 @@ for entry in os.scandir("inbox"):
             prev_content = prev_message['content']
         if 'content' in curr_message:
             curr_content = curr_message['content']
-        if prev_sender != "Nathan Bollig" and curr_sender == "Nathan Bollig" and prev_content != None and curr_content != None:
+        if prev_sender != SELF and curr_sender == SELF and prev_content != None and curr_content != None:
             assert(curr_message['timestamp_ms'] > prev_message['timestamp_ms'])
             # message and response is stored in dictionary only if they are less than 12 hours apart
             if (curr_message['timestamp_ms'] - prev_message['timestamp_ms'])/1000.0 < 12*60:
