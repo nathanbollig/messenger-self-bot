@@ -121,7 +121,7 @@ def response(user_response, threshold = 0.19):
 # Main driver
 # =============================================================================
 
-if __name__ == 'main':
+if __name__ == '__main__':
     flag=True
     print("NB: My name is Nathan. I will answer your queries. If you want to exit, type 'bye'!")
     while(flag == True):
