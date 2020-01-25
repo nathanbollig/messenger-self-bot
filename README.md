@@ -32,4 +32,4 @@ After supplying these files, run main.py to start the chatbot. Here is a sample 
     bye
     NB: Hasta luego!
 
-I plan to use this as a way to introduce myself during a lecture, by incorporating my Facebook chat history into the chat bot and including biographical content in chatbot.txt file.
+I plan to use this as a way to introduce myself during a lecture, by incorporating my Facebook chat history into the chatbot and including biographical content in the chatbot.txt file.
